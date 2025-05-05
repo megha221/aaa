@@ -1980,6 +1980,7 @@ body {
   text-align: right;
   max-width: 300px;
   margin-left: auto;
+  margin-top: 5rem;
 }
 
 .cta-box p {
@@ -1994,10 +1995,11 @@ body {
   background-position: right bottom;
   color: white;
   font-weight: 600;
-  border: 1px solid #f5af89;
+  border: 1px solid #ffff;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  /* background: red; */
 }
 
 .cta-button span {
