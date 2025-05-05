@@ -30,6 +30,11 @@
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    backdrop-filter: blur(5px);
+  background-color: rgba(33, 31, 30, 1); /* Same as your fallback */
+  border-radius: 10px;
+  opacity: 1;
+  padding: 0.8rem;
   }
 
   .nav-links a {
@@ -535,7 +540,7 @@ object-fit: contain;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
   }
   
@@ -563,7 +568,7 @@ object-fit: contain;
   /* 1. Make the grid responsive */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
     padding: 1rem;
   }
@@ -845,7 +850,7 @@ object-fit: contain;
     }
   }
   .showcase-section h2 ,.comparison-section h2{
-    font-size: 6rem;
+    font-size: 7rem;
     margin-bottom: 2rem;
     text-align: left; /* or whatever your desktop alignment is */
   }
@@ -888,6 +893,7 @@ object-fit: contain;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     opacity: 1;
     backdrop-filter: blur(5px);
+    
   }
   
   /* style dropdown items */
@@ -1925,7 +1931,7 @@ flex-direction: column;
   display: block;
   break-inside: avoid;
   transition: transform 0.3s ease;
-  height: 250px;
+  height: 100%;
 }
 
 .gallery-grid img:hover {
@@ -2085,3 +2091,67 @@ body {
 .faq-item.active .faq-question span {
   transform: rotate(45deg);
 }
+/*  */
+
+.showcase-section h2 {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-size: 220px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.09em;
+  line-height: 90%;
+  /* color: #1d322d; */
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+
+/* Optional responsive adjustments */
+@media (max-width: 768px) {
+  .showcase-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.gshowcase-section h2 {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-size: 130px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.09em;
+  line-height: 90%;
+  /* color: #1d322d; */
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.gshowcase-section{
+  padding: 2rem;
+}
+/* Optional responsive adjustments */
+@media (max-width: 768px) {
+  .gshowcase-section h2 {
+    font-size: 2rem;
+  }
+  .gshowcase-section{
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gshowcase-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Gallery inside */
