@@ -1430,7 +1430,7 @@ object-fit: contain;
 .designer-content h2 {
   font-size: 2.6rem;
   font-weight: 600;
-  padding: 3rem;
+  /* padding: 3rem; */
 }
 
 .designer-content p {
