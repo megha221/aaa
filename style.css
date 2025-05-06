@@ -113,7 +113,7 @@
     background-color: #111;
     border-radius: 10px;
     overflow: hidden;
-    height: 400px;
+    /* height: 400px; */
   }
 
   .project-card img {
@@ -653,7 +653,7 @@ object-fit: contain;
     background-color: #111;
     border-radius: 10px;
     overflow: hidden;
-    height: 400px;
+    /* height: 400px; */
   }
   
   .project-card img {
@@ -1612,6 +1612,7 @@ padding: 4rem 2rem;
 text-align: center;
 background-color: #000;
 color: #fff;
+margin-top: 5rem;
 }
 
 .services-section h2 {
@@ -1972,7 +1973,7 @@ body {
 }
 
 .logo-container img {
-  max-width: 500px;
+  max-width: 700px;
   height: auto;
 }
 
@@ -1989,7 +1990,7 @@ body {
 }
 
 .cta-button {
-  padding: 12px 24px;
+  padding: 12px 0px;
   background: linear-gradient(to right, #f5af89, #f5af89 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -2005,12 +2006,16 @@ body {
 .cta-button span {
   margin-left: 8px;
   font-size: 1.2rem;
+  background: rgb(243, 172, 133);
+  padding: 0.8rem;
+  border-radius: 8px;
 }
 
-.cta-button:hover {
+/* .cta-button:hover {
   background-position: left bottom;
   color: black;
-}
+} */
+
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
@@ -2019,15 +2024,16 @@ body {
     align-items: center;
     text-align: center;
     gap: 32px;
+    padding: 0px;
   }
 
   .cta-box {
-    text-align: center;
+    /* text-align: right; */
     margin: 0;
   }
 
   .logo-container img {
-    max-width: 300px;
+    max-width: 390px;
   }
 }
 .dropdown li a::before {
@@ -2157,3 +2163,12 @@ body {
 }
 
 /* Gallery inside */
+.facta {
+  background-color: rgb(243, 172, 133);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
