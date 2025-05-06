@@ -2312,10 +2312,85 @@ body {
   transition-delay: 0.3s;
 }
 
-.gallery-item p {
+.gallery-grid p {
   text-align: center;
   margin-top: 10px;
   font-size: 18px;
   font-weight: bold;
-  color: red;
+  color: white;
 }
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Stack sliding animation */
+.book {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page1 { z-index: 4; }
+.page2 { z-index: 3; transform: translateX(0); opacity: 0; }
+.page3 { z-index: 2; transform: translateX(0); opacity: 0; }
+.page4 { z-index: 1; transform: translateX(0); opacity: 0; }
+
+.gallery-item:hover .page2 {
+  transform: translateX(20px);
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+.gallery-item:hover .page3 {
+  transform: translateX(40px);
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.gallery-item:hover .page4 {
+  transform: translateX(60px);
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.gallery-title {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
