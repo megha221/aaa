@@ -990,7 +990,7 @@ object-fit: contain;
 }
 
 .services-box h3 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #000;
   margin-bottom: 1rem;
 }
@@ -1027,7 +1027,7 @@ object-fit: contain;
 
 .contact-box h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact-item {
@@ -1990,7 +1990,8 @@ body {
 }
 
 .cta-button {
-  padding: 12px 0px;
+  /* padding: 12px 0px; */
+  padding: 14px 0px 11px 18px;
   background: linear-gradient(to right, #f5af89, #f5af89 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -2171,4 +2172,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.services-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.services-box li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.services-box li::before {
+  content: "●";
+  color: black;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.services-box li:hover {
+  color: orange;
+}
+
+.services-box li:hover::before {
+  content: "";
+  width: 1rem;
+  height: 2px;
+  background-color: orange;
+  border-radius: 1px;
+}
+.services-box li.active {
+  background-color: #f3ac84; /* Example background */
+  color: white;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
 }
