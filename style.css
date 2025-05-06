@@ -92,7 +92,7 @@
 
   .projects-page {
     padding: 3rem 1rem;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
   }
 
@@ -110,7 +110,7 @@
   }
 
   .project-card {
-    background-color: #111;
+    /* background-color: #111; */
     border-radius: 10px;
     overflow: hidden;
     /* height: 400px; */
@@ -135,7 +135,7 @@
   .project-card h3 {
     padding: 0.5rem 1rem 1rem;
     font-size: 1rem;
-    color: black;
+    color: white;
   }
 
   @media (min-width: 1600px) {
@@ -632,7 +632,7 @@ object-fit: contain;
 /* Projects css */
 .projects-page {
     padding: 3rem 1rem;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
   }
   
@@ -650,7 +650,7 @@ object-fit: contain;
   }
   
   .project-card {
-    background-color: #111;
+    /* background-color: #111; */
     border-radius: 10px;
     overflow: hidden;
     /* height: 400px; */
@@ -675,7 +675,8 @@ object-fit: contain;
   .project-card h3 {
     padding: 0.5rem 1rem 1rem;
     font-size: 1rem;
-    color: black;
+    color: white;
+    font-weight: 400;
   }
 
 
@@ -1718,7 +1719,9 @@ padding: 0.3rem 0.7rem;
 border-radius: 5px;
 font-size: 0.75rem;
 }
-
+.project-card{
+  /* height: 600px; */
+}
 .project-card .content {
 display: flex;
 align-items: center; /* Center vertically */
@@ -1726,8 +1729,8 @@ gap: 2rem;           /* Add more breathing space */
 }
 
 .project-card img {
-width: 300px;         /* Bigger image */
-height: 300px;
+width: 100%;         /* Bigger image */
+height: 80%;
 border-radius: 12px;  /* Rounded corners */
 object-fit: cover;
 }
@@ -2213,4 +2216,60 @@ body {
   color: white;
   border-radius: 4px;
   padding: 0.3rem 0.6rem;
+}
+.projects-page h1{
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.09em;
+  line-height: 90%;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 40px;
+  margin-left: 1.4rem;
+}
+
+
+/* .project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+.project-labels {
+  position: absolute;
+  top: 0;              /* Changed from bottom to top */
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  padding: 0.8rem;
+  background-color: rgb(33, 31, 30);
+  border-bottom-right-radius: 10px;
+opacity: 1;
+}
+
+.project-labels span {
+  /* background-color: red; */
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  border-radius: 1px solid white;
+}
+.gallery-section h2{
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.09em;
+  line-height: 90%;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 40px;
+  margin-left: 1.4rem;
 }
